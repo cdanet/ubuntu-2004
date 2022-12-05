@@ -26,7 +26,7 @@
 ;
 $ORIGIN 1.16.172.in-addr.arpa.
 $TTL 3600 ; 1 hour
-@		IN		SOA		ptispo01ws01.pti.intra. vaamonde.pti.intra. (
+@		IN		SOA		ns1.cdanet.local. root.cdanet.local. (
 				1 ; serial
 				604800 ; refresh (1 week)
 				86400 ; retry (1 day)
@@ -34,9 +34,12 @@ $TTL 3600 ; 1 hour
 				604800 ; minimum (1 week)
 				)
 ;
-@		IN		NS		ptispo01ws01.pti.intra.
-@		IN		MX		10 mail.pti.intra.
+@		IN		NS		ns1.cdanet.local.
 ;
-20		IN		PTR		ptispo01ws01.pti.intra.
-254		IN		PTR		ptispo01fw01.pti.intra.
+10		IN		PTR		ns1.cdanet.local.
+;4		IN		PTR		ns2.cdanet.local.
+;3		IN		PTR		ns1.cdanet.local.
+8		IN		PTR		srv-zbx.cdanet.local.
+2		IN		PTR		srvproxmox.cdanet.local
+
 
