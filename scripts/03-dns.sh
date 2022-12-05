@@ -279,17 +279,17 @@ echo -e "Editando o arquivo de configuração pti.intra.hosts, pressione <Enter>
 	# opção do comando read: -s (Do not echo keystrokes)
 	read -s
 	vim /var/lib/bind/pti.intra.hosts
-	named-checkzone $DOMAIN /var/lib/bind/pti.intra.hosts &>> $LOG
+	named-checkzone $DOMAIN /var/lib/bind/cdanet.local.hosts &>> $LOG
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Editando o arquivo de configuração 172.16.1.rev, pressione <Enter> para continuar."
+echo -e "Editando o arquivo de configuração 172.31.255.rev, pressione <Enter> para continuar."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando read: -s (Do not echo keystrokes)
 	read -s
 	vim /var/lib/bind/172.16.1.rev
-	named-checkzone $DOMAINREV /var/lib/bind/172.16.1.rev &>> $LOG
-	named-checkzone $NETWORK /var/lib/bind/172.16.1.rev &>> $LOG
+	named-checkzone $DOMAINREV /var/lib/bind/172.31.255.rev &>> $LOG
+	named-checkzone $NETWORK /var/lib/bind/172.31.255.rev &>> $LOG
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
