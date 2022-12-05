@@ -27,7 +27,7 @@
 
 $ORIGIN pti.intra.
 $TTL 3600 ; 1 hour
-@		IN		SOA		ptispo01ws01.pti.intra. vaamonde.pti.intra. (
+@		IN		SOA		ns1.cdanet.local. root.cdanet.local. (
 				1 ; serial
 				604800 ; refresh (1 week)
 				86400 ; retry (1 day)
@@ -35,40 +35,41 @@ $TTL 3600 ; 1 hour
 				604800 ; minimum (1 week)
 				)
 ;
-@               IN 		NS		ptispo01ws01.pti.intra.
-@               IN 		MX		10 mail
-@               IN		TXT		"v=spf1 a mx -all"
+@               IN 		NS		cdanet.local.
+;@               IN		TXT		"v=spf1 a mx -all"
 ;
-pti.intra.      IN 		A 		172.16.1.20
-ptispo01ws01    IN 		A		172.16.1.20
-ptispo01fw01    IN 		A		172.16.1.254
-mail            IN 		A 		172.16.1.20
+cdanet.local.	    IN 		A 		172.31.255.10
+ns1		    IN 		A		172.31.255.10
+ns2		    IN		A		172.31.255.3
+srv-zbx		    IN 		A		172.31.255.8
+srv-sgp      	    IN 		A 		172.31.255.6
+srvproxmox	    IN		A		172.31.255.2
 ;
-cloud           IN		CNAME	ptispo01ws01
-ftp             IN		CNAME	ptispo01ws01
-glpi9           IN		CNAME	ptispo01ws01
-glpi10          IN		CNAME	ptispo01ws01
-helpdesk        IN		CNAME	ptispo01ws01
-imap4           IN		CNAME	ptispo01ws01
-imap            IN		CNAME	ptispo01ws01
-loganalyzer     IN		CNAME	ptispo01ws01
-log             IN		CNAME	ptispo01ws01
-mysql           IN		CNAME	ptispo01ws01
-netdata         IN		CNAME	ptispo01ws01
-next            IN		CNAME	ptispo01ws01
-nfs             IN		CNAME	ptispo01ws01
-ntp             IN		CNAME	ptispo01ws01
-own             IN		CNAME	ptispo01ws01
-pop3            IN		CNAME	ptispo01ws01
-portal          IN		CNAME	ptispo01ws01
-pxe             IN		CNAME	ptispo01ws01
-smtp            IN		CNAME	ptispo01ws01
-ssh             IN		CNAME	ptispo01ws01
-suporte         IN		CNAME	ptispo01ws01
-tftp            IN		CNAME	ptispo01ws01
-webdav          IN		CNAME	ptispo01ws01
-wpad            IN		CNAME	ptispo01ws01
-wp              IN		CNAME	ptispo01ws01
-www             IN		CNAME	ptispo01ws01
-zm              IN		CNAME	ptispo01ws01
+;cloud           IN		CNAME	ptispo01ws01
+;ftp             IN		CNAME	ptispo01ws01
+;glpi9           IN		CNAME	ptispo01ws01
+;glpi10          IN		CNAME	ptispo01ws01
+;helpdesk        IN		CNAME	ptispo01ws01
+;imap4           IN		CNAME	ptispo01ws01
+;imap            IN		CNAME	ptispo01ws01
+;loganalyzer     IN		CNAME	ptispo01ws01
+;log             IN		CNAME	ptispo01ws01
+;mysql           IN		CNAME	ptispo01ws01
+;netdata         IN		CNAME	ptispo01ws01
+;next            IN		CNAME	ptispo01ws01
+;nfs             IN		CNAME	ptispo01ws01
+;ntp             IN		CNAME	ptispo01ws01
+;own             IN		CNAME	ptispo01ws01
+;pop3            IN		CNAME	ptispo01ws01
+;portal          IN		CNAME	ptispo01ws01
+;pxe             IN		CNAME	ptispo01ws01
+;smtp            IN		CNAME	ptispo01ws01
+;ssh             IN		CNAME	ptispo01ws01
+;suporte         IN		CNAME	ptispo01ws01
+;tftp            IN		CNAME	ptispo01ws01
+;webdav          IN		CNAME	ptispo01ws01
+;wpad            IN		CNAME	ptispo01ws01
+;wp              IN		CNAME	ptispo01ws01
+;www             IN		CNAME	ptispo01ws01
+;zm              IN		CNAME	ptispo01ws01
 
